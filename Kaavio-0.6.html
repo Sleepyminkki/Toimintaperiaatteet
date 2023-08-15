@@ -1,0 +1,24 @@
+<html>
+  <body>
+
+    <pre class="mermaid">
+            graph TD
+            A[Selain]
+            B[Palvelin]
+            C[Nettisivu]
+            D[Käyttäjä]
+            D--1. Avaa selaimen-->A
+            A--2. Menee SPA-tyyliselle sivulle-->C
+            C--3. Luo muistiinpanon-->B
+            B--4. Tajuaa muutoksen-->C
+            C--5. Kertoo muutoksen mitkä pitää tehdä--->A
+            A--6. Lisää sivulle vain tarvittavat asiat ilmat että tarvitsee ladata--->C
+            
+    </pre>
+
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <body>
+
+    <pre class="mermaid">
+            graph TD 
+            A[Selain] 
+            B[Palvelin]
+            C[Nettisivu]
+            A--1.-->id1(Muistiinpano laitetaan)
+            id1--2.-->B
+            B--3. Lähettää koodia-->A
+            A--4. Ottaa muistiin panot JSON-muotoisina-->B
+            A--5. Lisää sivulle tarvittavat elementit-->C
+            
+    </pre>
+
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  </body>
+</html>

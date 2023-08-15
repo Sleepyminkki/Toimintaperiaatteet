@@ -1,0 +1,22 @@
+<html>
+  <body>
+
+    <pre class="mermaid">
+            graph TD 
+            A[Selain] 
+            B[Palvelin]
+            C[Nettisivu]
+            D[Käyttäjä]
+            D--1. Avaa-->A
+            A--2. Etsii https://studies.cs.helsinki.fi/exampleapp/spa--->B
+            B--3. Valmistaa ja avaa-->C
+            C--4. Näyttäytyy-->D
+            
+    </pre>
+
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  </body>
+</html>
